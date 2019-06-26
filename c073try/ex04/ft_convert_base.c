@@ -100,7 +100,7 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 {
 	long	nbr_base10;
 	char	buffer[34];
-	char	*nb_to_base;
+	int		*nb_to_base;
 	int		verif_nb;
 	int		base_len;
 

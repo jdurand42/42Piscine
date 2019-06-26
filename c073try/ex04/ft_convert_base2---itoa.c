@@ -14,12 +14,21 @@
 
 int		ft_strlen_us(char *str);
 
-char	*ft_putnbr_base(long nbr, char *base, char *buffer, long base_len)
+char	*ft_putnbr_base(int nbr, char *base, char *buffer, long base_len)
 {
 	long	base_div;
 	long	resultat;
 	int		i;
 
+	buff[33] = 0;
+	buff[32] = '0';
+	i = 32;
+	while (nbr)
+	{
+		buff[i--] = ft_abs(nbr % base);
+		buff /= base;
+	}
+	putsr(buff + i 1);
 	base_div = 1;
 	resultat = 0;
 	i = 0;
